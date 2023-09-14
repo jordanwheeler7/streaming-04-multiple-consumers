@@ -2,22 +2,23 @@
     This program sends a message to a queue on the RabbitMQ server.
     Make tasks harder/longer-running by adding dots at the end of the message.
 
-    Author: Denise Case
-    Date: January 15, 2023
-    
-    Edited by: Jordan Wheeler
-    Date: September 13, 2023
-
+    Author: Jordan Wheeler
+    Date: 13 September 2023
 """
 
 import pika
 import sys
 import webbrowser
+import csv
+import time
+
 
 # Configure logging
 from util_logger import setup_logger
 
 logger, logname = setup_logger(__file__)
+
+SHOW_OFFER = False
 
 def offer_rabbitmq_admin_site():
     """Offer to open the RabbitMQ Admin website"""
@@ -27,7 +28,7 @@ def offer_rabbitmq_admin_site():
         webbrowser.open_new("http://localhost:15672/#/queues")
         logger.info(f"Answer is {ans}.")
 
-def send_message(host: str, queue_name: str, message: str):
+def send_message(host: str, queue_name: str, input_file: str):
     """
     Creates and sends a message to the queue each execution.
     This process runs and finishes.
@@ -48,11 +49,20 @@ def send_message(host: str, queue_name: str, message: str):
         # and help ensure messages are processed in order
         # messages will not be deleted until the consumer acknowledges
         ch.queue_declare(queue=queue_name, durable=True)
-        # use the channel to publish a message to the queue
-        # every message passes through an exchange
-        ch.basic_publish(exchange="", routing_key=queue_name, body=message)
-        # print a message to the console for the user
-        logger.info(f" [x] Sent {message}")
+        
+        # Read the tasks.csv file and send each task to the queue
+        with open(input_file, 'r') as input_file:
+            reader = csv.reader(input_file)
+            for row in reader:
+                message = str(row)
+                # use the channel to publish a message to the queue
+                # every message passes through an exchange
+                ch.basic_publish(exchange="", routing_key=queue_name, body=message)
+                # print a message to the console for the user
+                logger.info(f" [x] Sent {message}")
+                # Wait 2 seconds between each message
+                time.sleep(2)
+                
     except pika.exceptions.AMQPConnectionError as e:
         logger.error(f"Error: Connection to RabbitMQ server failed: {e}")
         sys.exit(1)
@@ -65,12 +75,9 @@ def send_message(host: str, queue_name: str, message: str):
 # without executing the code below.
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":  
-    # ask the user if they'd like to open the RabbitMQ Admin site
-    offer_rabbitmq_admin_site()
-    # get the message from the command line
-    # if no arguments are provided, use the default message
-    # use the join method to convert the list of arguments into a string
-    # join by the space character inside the quotes
-    message = " ".join(sys.argv[1:]) or "Second task....."
+    # See if offer_rabbitmq_admin_site() should be called
+    if SHOW_OFFER == True:
+        # ask the user if they'd like to open the RabbitMQ Admin site
+        offer_rabbitmq_admin_site()
     # send the message to the queue
-    send_message("localhost","task_queue2",message)
+    send_message("localhost","task_queue3","tasks.csv")

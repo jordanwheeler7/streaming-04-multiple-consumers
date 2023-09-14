@@ -2,11 +2,9 @@
     This program listens for work messages contiously. 
     Start multiple versions to add more workers.  
 
-    Author: Denise Case
-    Date: January 15, 2023
-    
-    Edited by: Jordan Wheeler
-    Date: September 13, 2023
+    Author: Jordan Wheeler
+    Date: 13 September 2023
+
 
 """
 
@@ -104,4 +102,4 @@ def main(hn: str = "localhost", qn: str = "task_queue"):
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":
     # call the main function with the information needed
-    main("localhost", "task_queue2")
+    main("localhost", "task_queue3")

@@ -1,0 +1,28 @@
+2023-09-13 21:17:30,754.v3_listening_worker_wheeler.INFO ==================================================
+2023-09-13 21:17:30,754.v3_listening_worker_wheeler.INFO Today is 2023-09-13 at 09:17 PM
+2023-09-13 21:17:30,754.v3_listening_worker_wheeler.INFO Running on: nt Windows 10
+2023-09-13 21:17:30,755.v3_listening_worker_wheeler.INFO Python version:  3.11.1
+2023-09-13 21:17:30,755.v3_listening_worker_wheeler.INFO Python path: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers\.venv
+2023-09-13 21:17:30,755.v3_listening_worker_wheeler.INFO Working dir: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers
+2023-09-13 21:17:30,755.v3_listening_worker_wheeler.INFO ==================================================
+2023-09-13 21:17:30,775.v3_listening_worker_wheeler.INFO  [*] Ready for work. To exit press CTRL+C
+2023-09-13 21:17:35,327.v3_listening_worker_wheeler.INFO  [x] Received ['Second task....']22023-09-13 21:17:39,328.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:17:39,328.v3_listening_worker_wheeler.INFO  [x] Received ['Forth task...']
+2023-09-13 21:17:42,329.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:17:43,329.v3_listening_worker_wheeler.INFO  [x] Received ['Sixth task...']
+2023-09-13 21:17:46,330.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:20:17,722.v3_listening_worker_wheeler.INFO  [x] Received ['Second task....']22023-09-13 21:20:21,723.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:20:21,724.v3_listening_worker_wheeler.INFO  [x] Received ['Forth task....']
+2023-09-13 21:20:25,724.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:20:25,725.v3_listening_worker_wheeler.INFO  [x] Received ['Sixth task........']
+2023-09-13 21:20:33,726.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:20:33,726.v3_listening_worker_wheeler.INFO  [x] Received ['Eighth task...']
+2022023-09-13 21:20:37,726.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:20:37,726.v3_listening_worker_wheeler.INFO  [x] Received ['Tenth task.']2023-09-13 21:20:38,728.v3_listening_worker_wheeler.INFO  [x] Done.
+2023-09-13 21:20:38,728.v3_listening_worker_wheeler.INFO  [x] Received ['Twelfth.']
+2023-09-13 2023-09-13 21:20:43,729.v3_listening_worker_wheeler.INFO  2023-09-13 21:22:03,666.v3_listening_worker_wheeler.INFO  User interrupted continuous listening process.
+2023-09-13 21:22:03,666.v3_listening_worker_wheeler.INFO 
+Closing connection. Goodbye.
+
+oodbye.
+

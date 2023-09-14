@@ -1,0 +1,9 @@
+2023-09-13 21:00:40,939.v2_emitter_of_tasks.INFO ==================================================
+2023-09-13 21:00:40,940.v2_emitter_of_tasks.INFO Today is 2023-09-13 at 09:00 PM
+2023-09-13 21:00:40,940.v2_emitter_of_tasks.INFO Running on: nt Windows 10
+2023-09-13 21:00:40,940.v2_emitter_of_tasks.INFO Python version:  3.11.1
+2023-09-13 21:00:40,940.v2_emitter_of_tasks.INFO Python path: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers\.venv
+2023-09-13 21:00:40,940.v2_emitter_of_tasks.INFO Working dir: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers
+2023-09-13 21:00:40,940.v2_emitter_of_tasks.INFO ==================================================
+2023-09-13 21:00:43,485.v2_emitter_of_tasks.INFO Seeing if you want to monitor RabbitMQ queues
+2023-09-13 21:00:43,496.v2_emitter_of_tasks.INFO  [x] Sent Fifth task.....

@@ -1,4 +1,7 @@
 """
+Jordan Wheeler
+13 September 2023
+
 
 Creates and sends a task message to the queue each execution.
 This process runs and finishes. 
@@ -15,13 +18,19 @@ import pika
 import sys
 import webbrowser
 
+# Configure logging
+
+from util_logger import setup_logger
+
+logger, logname = setup_logger(__file__)
+
 def offer_rabbitmq_admin_site():
     """Offer to open the RabbitMQ Admin website"""
     ans = input("Would you like to monitor RabbitMQ queues? y or n ")
-    print()
+    logger.info("Seeing if you want to monitor RabbitMQ queues")
     if ans.lower() == "y":
         webbrowser.open_new("http://localhost:15672/#/queues")
-        print()
+        logger.info(f"Answer is {ans}.")
 
 # call the function defined above
 offer_rabbitmq_admin_site()
@@ -45,6 +54,6 @@ channel.basic_publish(
     properties=pika.BasicProperties(delivery_mode=pika.spec.PERSISTENT_DELIVERY_MODE),
 )
 # tell the user the message was sent
-print(f" [x] Sent {message}")
+logger.info(f" [x] Sent {message}")
 # close the connection to the server
 connection.close()

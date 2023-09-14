@@ -1,0 +1,10 @@
+2023-09-13 20:35:39,510.v1_emitter_of_tasks.INFO ==================================================
+2023-09-13 20:35:39,510.v1_emitter_of_tasks.INFO Today is 2023-09-13 at 08:35 PM
+2023-09-13 20:35:39,511.v1_emitter_of_tasks.INFO Running on: nt Windows 10
+2023-09-13 20:35:39,511.v1_emitter_of_tasks.INFO Python version:  3.11.1
+2023-09-13 20:35:39,511.v1_emitter_of_tasks.INFO Python path: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers\.venv
+2023-09-13 20:35:39,511.v1_emitter_of_tasks.INFO Working dir: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers
+2023-09-13 20:35:39,512.v1_emitter_of_tasks.INFO ==================================================
+2023-09-13 20:35:44,789.v1_emitter_of_tasks.INFO Seeing if you want to monitor RabbitMQ queues
+2023-09-13 20:35:44,856.v1_emitter_of_tasks.INFO Answer is y.
+2023-09-13 20:35:44,867.v1_emitter_of_tasks.INFO  [x] Sent First task...

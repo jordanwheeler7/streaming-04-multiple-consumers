@@ -1,0 +1,19 @@
+2023-09-13 21:20:15,704.v3_emitter_of_tasks_wheeler.INFO ==================================================
+2023-09-13 21:20:15,704.v3_emitter_of_tasks_wheeler.INFO Today is 2023-09-13 at 09:20 PM
+2023-09-13 21:20:15,704.v3_emitter_of_tasks_wheeler.INFO Running on: nt Windows 10
+2023-09-13 21:20:15,704.v3_emitter_of_tasks_wheeler.INFO Python version:  3.11.1
+2023-09-13 21:20:15,704.v3_emitter_of_tasks_wheeler.INFO Python path: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers\.venv
+2023-09-13 21:20:15,704.v3_emitter_of_tasks_wheeler.INFO Working dir: C:\Users\jorda\OneDrive\Desktop\Northwest Homework\1. Streaming Data\Module 4\streaming-04-multiple-consumers
+2023-09-13 21:20:15,704.v3_emitter_of_tasks_wheeler.INFO ==================================================
+2023-09-13 21:20:15,721.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['First task....']
+2023-09-13 21:20:17,722.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Second task....']
+2023-09-13 21:20:19,722.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Third task......']
+2023-09-13 21:20:21,723.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Forth task....']
+2023-09-13 21:20:23,724.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Fifth task........']
+2023-09-13 21:20:25,725.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Sixth task........']
+2023-09-13 21:20:27,725.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Seventh task....']
+2023-09-13 21:20:29,726.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Eighth task...']
+2023-09-13 21:20:31,727.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Ninth task..']
+2023-09-13 21:20:33,728.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Tenth task.']
+2023-09-13 21:20:35,729.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Elevnth task.....']
+2023-09-13 21:20:37,729.v3_emitter_of_tasks_wheeler.INFO  [x] Sent ['Twelfth.']
